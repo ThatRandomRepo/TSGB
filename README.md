@@ -26,6 +26,16 @@ And I didn’t get this from a classroom — I lived it.
 The shed, the mistakes, the hole in the wall — they’re all part of this paper.
 
 ---
+## 💬 How to Engage
+
+Want to ask a question? **Open an issue**.  
+Want to challenge the logic? **Cite the code or the sim**.  
+Want to work with me or support this? **Let’s talk through GitHub first**.
+
+I will defend the idea. I will debate with engineers.  
+This is not just a prototype — it’s a personal project that’s consumed over a year of my life.
+
+---
 
 ## 📂 What’s In This Repo
 
@@ -68,16 +78,7 @@ But if you're serious, curious, and want to **engage thoughtfully**, I’m open.
 
 ---
 
-## 💬 How to Engage
 
-Want to ask a question? **Open an issue**.  
-Want to challenge the logic? **Cite the code or the sim**.  
-Want to work with me or support this? **Let’s talk through GitHub first**.
-
-I will defend the idea. I will debate with engineers.  
-This is not just a prototype — it’s a personal project that’s consumed over a year of my life.
-
----
 
 ## 💰 Money?
 
