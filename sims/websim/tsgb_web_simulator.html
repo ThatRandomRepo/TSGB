@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TSGB Web Simulator</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body style="font-family: sans-serif;">
+    <h2>TSGB Web-Based Gearbox Simulator</h2>
+    <p>This demo shows how the Torque Shift Gearbox (TSGB) responds to a grid frequency drop using RoCoF-driven control logic.</p>
+
+    <div id="plot1" style="height:400px;"></div>
+    <div id="plot2" style="height:400px;"></div>
+    <div id="plot3" style="height:400px;"></div>
+
+    <script>
+        const duration = 10;
+        const dt = 0.01;
+        const steps = Math.floor(duration / dt);
+        let time = [], freq = [], rocof = [], gear = [], torque = [];
+
+        const ratios = [...Array(12)].map((_, i) => 1.8 + i * ((2.0 - 1.8) / 11));
+        const torques = [...Array(12)].map((_, i) => 420 - i * ((420 - 180) / 11));
+
+        let lastFreq = 50.0;
+
+        for (let i = 0; i < steps; i++) {
+            let t = i * dt;
+            time.push(t);
+            let f = (t < 2) ? 50 : (t < 4 ? 50 - 2 * (t - 2) : 48);
+            freq.push(f);
+            rocof.push((f - lastFreq) / dt);
+            lastFreq = f;
+
+            let g = 11;
+            if (rocof[i] < -1.0) g = 0;
+            else if (rocof[i] < -0.8) g = 1;
+            else if (rocof[i] < -0.6) g = 2;
+            else if (rocof[i] < -0.4) g = 3;
+            else if (rocof[i] < -0.2) g = 4;
+            else if (rocof[i] < -0.05) g = 5;
+            gear.push(g + 1);
+            torque.push(torques[g]);
+        }
+
+        Plotly.newPlot('plot1', [{
+            x: time,
+            y: freq,
+            name: "Frequency (Hz)",
+            line: {color: 'blue'}
+        }], {
+            title: "Grid Frequency vs Time",
+            xaxis: {title: "Time (s)"},
+            yaxis: {title: "Frequency (Hz)"}
+        });
+
+        Plotly.newPlot('plot2', [{
+            x: time,
+            y: gear,
+            name: "Gear",
+            line: {color: 'orange', shape: 'hv'}
+        }], {
+            title: "TSGB Gear Index vs Time",
+            xaxis: {title: "Time (s)"},
+            yaxis: {title: "Gear Index"}
+        });
+
+        Plotly.newPlot('plot3', [{
+            x: time,
+            y: torque,
+            name: "Torque (Nm)",
+            line: {color: 'green'}
+        }], {
+            title: "TSGB Torque Output vs Time",
+            xaxis: {title: "Time (s)"},
+            yaxis: {title: "Torque (Nm)"}
+        });
+    </script>
+</body>
+</html>
