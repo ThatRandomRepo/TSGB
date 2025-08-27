@@ -1,0 +1,196 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Grid Integration Benefits</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script><style>
+        body {width: 1280px; min-height: 883px; overflow: hidden; margin: 0;
+            padding: 0;}
+        .slide {
+            width: 1280px;
+            min-height: 883px;
+            position: relative;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1a3a3a 0%, #0f172a 100%);
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .benefit-box {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: all 0.3s ease;
+        }
+        .benefit-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .divider {
+            height: 4px;
+            background: linear-gradient(90deg, #f59e0b 0%, #10b981 100%);
+        }
+        .grid-section {
+            background: rgba(16, 185, 129, 0.05);
+            border-left: 3px solid rgba(16, 185, 129, 0.2);
+        }
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            margin-right: 15px;
+        }
+    
+html {
+    overflow: hidden;
+}</style>
+</head>
+<body>
+<div class="slide gradient-bg flex flex-col" style=" overflow: hidden;">
+<!-- Header -->
+<div class="px-16 pt-12 pb-6">
+<h1 class="text-4xl font-bold text-white tracking-tight">Grid Integration Benefits</h1>
+<div class="divider w-24 mt-4"></div>
+</div>
+<!-- Main Content -->
+<div class="flex-1 px-16 flex flex-col">
+<!-- Top Section: Key Benefits Overview -->
+<div class="mb-6 flex">
+<div class="w-2/3">
+<div class="card p-5 rounded-lg h-full">
+<h2 class="text-2xl font-semibold text-white mb-3">Key Integration Capabilities</h2>
+<p class="text-gray-200 mb-4">The TSGB provides mechanical grid anchoring across both transmission and distribution networks, offering benefits that software-only solutions cannot match.</p>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex items-center">
+<div class="feature-icon">
+<i class="fas fa-sync-alt text-blue-400 text-xl"></i>
+</div>
+<div>
+<h3 class="text-md font-medium text-white">AC Grid Synchronization</h3>
+<p class="text-sm text-gray-300">Always in phase with grid waveform</p>
+</div>
+</div>
+<div class="flex items-center">
+<div class="feature-icon">
+<i class="fas fa-bolt text-yellow-400 text-xl"></i>
+</div>
+<div>
+<h3 class="text-md font-medium text-white">Voltage Regulation</h3>
+<p class="text-sm text-gray-300">Reactive power support during sags</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="w-1/3 pl-6">
+<div class="h-full overflow-hidden rounded-lg">
+<img alt="Solar PV Farm" class="w-full h-full object-cover opacity-80" src="https://picture-search.skywork.ai/aippt/image/sheet/22b65d7ba3e770940aff8e2938a0e6f8.jpg">
+</div>
+</div>
+</div>
+<!-- Middle Section: Grid Events Response -->
+<div class="mb-6">
+<div class="grid-section p-5 rounded-lg">
+<h2 class="text-xl font-semibold text-white mb-3 flex items-center">
+<i class="fas fa-shield-alt text-green-400 mr-3"></i>
+                        Response to Grid Events
+                    </h2>
+<div class="grid grid-cols-4 gap-4">
+<div class="benefit-box p-3 rounded-lg">
+<div class="flex items-center mb-2">
+<i class="fas fa-industry text-purple-400 mr-2"></i>
+<h3 class="text-md font-medium text-white">Load Increase</h3>
+</div>
+<p class="text-xs text-gray-300">Instantaneous torque response during industrial motor starts</p>
+</div>
+<div class="benefit-box p-3 rounded-lg">
+<div class="flex items-center mb-2">
+<i class="fas fa-wind text-blue-400 mr-2"></i>
+<h3 class="text-md font-medium text-white">Generation Loss</h3>
+</div>
+<p class="text-xs text-gray-300">Absorbs frequency shifts during wind farm trips</p>
+</div>
+<div class="benefit-box p-3 rounded-lg">
+<div class="flex items-center mb-2">
+<i class="fas fa-bolt-lightning text-yellow-400 mr-2"></i>
+<h3 class="text-md font-medium text-white">Voltage Sag</h3>
+</div>
+<p class="text-xs text-gray-300">Maintains grid voltage during fault-induced sags</p>
+</div>
+<div class="benefit-box p-3 rounded-lg">
+<div class="flex items-center mb-2">
+<i class="fas fa-unlink text-red-400 mr-2"></i>
+<h3 class="text-md font-medium text-white">Islanding</h3>
+</div>
+<p class="text-xs text-gray-300">Provides stable reference during grid separation</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Section: Network Applications -->
+<div class="flex-1 grid grid-cols-2 gap-6">
+<!-- Left: Renewable Integration -->
+<div class="card p-5 rounded-lg">
+<h2 class="text-xl font-semibold text-white mb-3 flex items-center">
+<i class="fas fa-solar-panel text-orange-400 mr-3"></i>
+                        Inverter-Based Renewables
+                    </h2>
+<div class="benefit-box p-4 rounded-lg mb-3">
+<h3 class="text-md font-medium text-white mb-1">Solar Edge Cases</h3>
+<p class="text-sm text-gray-300">Suppresses local PV voltage spikes and buffers downstream inverter instability via torque modulation</p>
+</div>
+<div class="benefit-box p-4 rounded-lg">
+<h3 class="text-md font-medium text-white mb-1">Wind Farm Stability</h3>
+<p class="text-sm text-gray-300">Dampens phase noise and voltage instability in wind-heavy feeders</p>
+</div>
+</div>
+<!-- Right: Network Levels -->
+<div class="grid-section p-5 rounded-lg">
+<h2 class="text-xl font-semibold text-white mb-3 flex items-center">
+<i class="fas fa-network-wired text-blue-400 mr-3"></i>
+                        Transmission &amp; Distribution Use Cases
+                    </h2>
+<div class="grid grid-cols-3 gap-3">
+<div class="benefit-box p-3 rounded-lg">
+<div class="flex items-center mb-1">
+<i class="fas fa-broadcast-tower text-red-400 mr-2"></i>
+<h3 class="text-sm font-medium text-white">Transmission</h3>
+</div>
+<p class="text-xs text-gray-300">50–400 kV: Grid stiffening, HVDC intertie support</p>
+</div>
+<div class="benefit-box p-3 rounded-lg">
+<div class="flex items-center mb-1">
+<i class="fas fa-bolt text-yellow-400 mr-2"></i>
+<h3 class="text-sm font-medium text-white">Primary</h3>
+</div>
+<p class="text-xs text-gray-300">33–66 kV: Inverter phase anchoring, VAR support</p>
+</div>
+<div class="benefit-box p-3 rounded-lg">
+<div class="flex items-center mb-1">
+<i class="fas fa-home text-green-400 mr-2"></i>
+<h3 class="text-sm font-medium text-white">Secondary</h3>
+</div>
+<p class="text-xs text-gray-300">11–33 kV: Local waveform provision, microgrid anchor</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="px-16 py-4 flex justify-between items-center">
+<div class="flex items-center">
+<i class="fas fa-lightbulb text-yellow-400 mr-2"></i>
+<p class="text-gray-300 text-sm">The TSGB is not just grid-compatible—it is the grid.</p>
+</div>
+<p class="text-gray-400 text-sm" style="visibility: hidden;">6 / 10</p>
+</div>
+</div>
+
+</body></html>

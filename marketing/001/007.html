@@ -1,0 +1,182 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Blackstart and Emergency Operations</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script><style>
+        body {width: 1280px; min-height: 788px; overflow: hidden; margin: 0;
+            padding: 0;}
+        .slide-container {
+            width: 1280px;
+            min-height: 788px;
+            position: relative;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1a3a3a 0%, #0f172a 100%);
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .process-box {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: all 0.3s ease;
+        }
+        .process-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .divider {
+            height: 4px;
+            background: linear-gradient(90deg, #f59e0b 0%, #10b981 100%);
+        }
+        .step-connector {
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 15px solid rgba(255, 255, 255, 0.2);
+        }
+        .emergency-section {
+            background: rgba(239, 68, 68, 0.05);
+            border-left: 3px solid rgba(239, 68, 68, 0.2);
+        }
+        .deadlift-section {
+            background: rgba(16, 185, 129, 0.05);
+            border-left: 3px solid rgba(16, 185, 129, 0.2);
+        }
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 0.7; }
+            50% { opacity: 1; }
+        }
+    
+html {
+    overflow: hidden;
+}</style>
+</head>
+<body>
+<div class="slide-container gradient-bg flex flex-col" style=" overflow: hidden;">
+<!-- Header -->
+<div class="px-16 pt-12 pb-6">
+<h1 class="text-4xl font-bold text-white tracking-tight">Blackstart and Emergency Operations</h1>
+<div class="divider w-24 mt-4"></div>
+</div>
+<!-- Main Content -->
+<div class="flex-1 px-16 flex flex-col">
+<!-- Top Section: The Blackstart Challenge -->
+<div class="mb-4">
+<div class="card p-4 rounded-lg">
+<h2 class="text-xl font-semibold text-white mb-2 flex items-center">
+<i class="fas fa-bolt text-yellow-400 mr-3 text-2xl"></i>
+                        The Blackstart Challenge
+                    </h2>
+<p class="text-gray-200">In a grid collapse, conventional renewables can't restart without external references. TSGB's "Deadlift Mode" enables autonomous grid formation and restoration without communication infrastructure.</p>
+</div>
+</div>
+<!-- Middle Section: Deadlift Mode Process -->
+<div class="mb-4">
+<div class="deadlift-section p-4 rounded-lg">
+<h2 class="text-xl font-semibold text-white mb-3 flex items-center">
+<i class="fas fa-weight-hanging text-green-400 mr-3"></i>
+                        "Deadlift Mode": Autonomous Restart Sequence
+                    </h2>
+<div class="grid grid-cols-6 gap-2 relative">
+<div class="process-box p-3 rounded-lg">
+<div class="flex items-center justify-center mb-2">
+<i class="fas fa-play-circle text-green-400 text-2xl pulse"></i>
+</div>
+<h3 class="text-md font-medium text-white mb-1 text-center">Step 1</h3>
+<p class="text-xs text-gray-300 text-center">Autonomous Rotor Spin-Up via DC drive</p>
+</div>
+<div class="process-box p-3 rounded-lg">
+<div class="flex items-center justify-center mb-2">
+<i class="fas fa-bolt text-yellow-400 text-2xl"></i>
+</div>
+<h3 class="text-md font-medium text-white mb-1 text-center">Step 2</h3>
+<p class="text-xs text-gray-300 text-center">Self-Excitation &amp; Waveform Formation</p>
+</div>
+<div class="process-box p-3 rounded-lg">
+<div class="flex items-center justify-center mb-2">
+<i class="fas fa-broadcast-tower text-blue-400 text-2xl"></i>
+</div>
+<h3 class="text-md font-medium text-white mb-1 text-center">Step 3</h3>
+<p class="text-xs text-gray-300 text-center">Islanded Grid Formation</p>
+</div>
+<div class="process-box p-3 rounded-lg">
+<div class="flex items-center justify-center mb-2">
+<i class="fas fa-plug text-purple-400 text-2xl"></i>
+</div>
+<h3 class="text-md font-medium text-white mb-1 text-center">Step 4</h3>
+<p class="text-xs text-gray-300 text-center">Load Reconnection</p>
+</div>
+<div class="process-box p-3 rounded-lg">
+<div class="flex items-center justify-center mb-2">
+<i class="fas fa-sync-alt text-orange-400 text-2xl"></i>
+</div>
+<h3 class="text-md font-medium text-white mb-1 text-center">Step 5</h3>
+<p class="text-xs text-gray-300 text-center">Multi-Unit Synchronization</p>
+</div>
+<div class="process-box p-3 rounded-lg">
+<div class="flex items-center justify-center mb-2">
+<i class="fas fa-link text-green-400 text-2xl"></i>
+</div>
+<h3 class="text-md font-medium text-white mb-1 text-center">Step 6</h3>
+<p class="text-xs text-gray-300 text-center">HVDC Rejoin (if present)</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Section: Emergency Operations -->
+<div class="grid grid-cols-2 gap-4">
+<div class="emergency-section p-4 rounded-lg">
+<h2 class="text-xl font-semibold text-white mb-3 flex items-center">
+<i class="fas fa-network-wired text-red-400 mr-3"></i>
+                        Fleet Coordination Without Communication
+                    </h2>
+<div class="grid grid-cols-1 gap-3">
+<div class="process-box p-3 rounded-lg">
+<h3 class="text-md font-medium text-white mb-1">Autonomous Synchronization</h3>
+<p class="text-sm text-gray-300">Adjacent TSGBs use voltage/phase detection to soft-merge via sync relay</p>
+</div>
+<div class="process-box p-3 rounded-lg">
+<h3 class="text-md font-medium text-white mb-1">Grid Section Mapping</h3>
+<p class="text-sm text-gray-300">Prioritized reconnection strategy based on pre-configured section maps</p>
+</div>
+</div>
+</div>
+<div class="deadlift-section p-4 rounded-lg">
+<h2 class="text-xl font-semibold text-white mb-3 flex items-center">
+<i class="fas fa-shield-alt text-green-400 mr-3"></i>
+                        Post-Event Stabilization
+                    </h2>
+<div class="grid grid-cols-1 gap-3">
+<div class="process-box p-3 rounded-lg">
+<h3 class="text-md font-medium text-white mb-1">Mechanical Anchoring</h3>
+<p class="text-sm text-gray-300">TSGBs provide physical grid backbone during recovery phases</p>
+</div>
+<div class="process-box p-3 rounded-lg">
+<h3 class="text-md font-medium text-white mb-1">Grid Recomposition</h3>
+<p class="text-sm text-gray-300">TSGB units maintain stable waveforms while system operators reconnect transmission corridors</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="px-16 py-4 flex justify-between items-center">
+<div class="flex items-center">
+<i class="fas fa-lightbulb text-yellow-400 mr-2"></i>
+<p class="text-gray-300 text-sm">Deadlift Mode is grid rebirth, engineered.</p>
+</div>
+<p class="text-gray-400 text-sm" style="visibility: hidden;">8 / 10</p>
+</div>
+</div>
+
+</body></html>

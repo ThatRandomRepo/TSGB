@@ -1,0 +1,184 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Deployment Strategy &amp; Economics</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://cdn.tailwindcss.com"></script><style>
+        body {width: 1280px; min-height: 1136px; overflow: hidden; margin: 0;
+            padding: 0;}
+        .slide {
+            width: 1280px;
+            min-height: 1136px;
+            position: relative;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1a3a3a 0%, #0f172a 100%);
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .strategy-box {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: all 0.3s ease;
+        }
+        .strategy-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .divider {
+            height: 4px;
+            background: linear-gradient(90deg, #f59e0b 0%, #10b981 100%);
+        }
+        .deployment-column {
+            background: rgba(16, 185, 129, 0.05);
+            border-left: 3px solid rgba(16, 185, 129, 0.2);
+        }
+        .economics-column {
+            background: rgba(59, 130, 246, 0.05);
+            border-left: 3px solid rgba(59, 130, 246, 0.2);
+        }
+        .node-icon {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            margin-right: 8px;
+        }
+    
+html {
+    overflow: hidden;
+}</style>
+</head>
+<body>
+<div class="slide gradient-bg flex flex-col" style=" overflow: hidden;">
+<!-- Header -->
+<div class="px-16 pt-12 pb-6">
+<h1 class="text-4xl font-bold text-white tracking-tight">Deployment Strategy &amp; Economics</h1>
+<div class="divider w-24 mt-4"></div>
+</div>
+<!-- Main Content -->
+<div class="flex-1 px-16 flex flex-col">
+<!-- Top Section: Fleet Architecture -->
+<div class="mb-4">
+<div class="deployment-column p-4 rounded-lg">
+<h2 class="text-xl font-semibold text-white mb-3 flex items-center">
+<i class="fas fa-sitemap text-green-400 mr-3"></i>
+                        Fleet Architecture: Grid Anchoring Strategy
+                    </h2>
+<div class="grid grid-cols-3 gap-4">
+<div class="strategy-box p-3 rounded-lg">
+<div class="flex items-center mb-2">
+<div class="node-icon bg-yellow-500 text-white">
+<i class="fas fa-broadcast-tower"></i>
+</div>
+<h3 class="text-md font-medium text-white">Backbone Nodes</h3>
+</div>
+<p class="text-sm text-gray-300">132-400 kV substations, HVDC interties</p>
+<p class="text-sm text-gray-300">Size: 10-50 MW units</p>
+<p class="text-sm text-gray-300">Function: Grid stiffening, frequency damping</p>
+</div>
+<div class="strategy-box p-3 rounded-lg">
+<div class="flex items-center mb-2">
+<div class="node-icon bg-green-500 text-white">
+<i class="fas fa-anchor"></i>
+</div>
+<h3 class="text-md font-medium text-white">Anchor Nodes</h3>
+</div>
+<p class="text-sm text-gray-300">33-66 kV collector stations</p>
+<p class="text-sm text-gray-300">Size: 1-10 MW units</p>
+<p class="text-sm text-gray-300">Function: Inverter phase anchoring, VAR support</p>
+</div>
+<div class="strategy-box p-3 rounded-lg">
+<div class="flex items-center mb-2">
+<div class="node-icon bg-blue-500 text-white">
+<i class="fas fa-plug"></i>
+</div>
+<h3 class="text-md font-medium text-white">Edge Nodes</h3>
+</div>
+<p class="text-sm text-gray-300">11-33 kV rural and weak-grid areas</p>
+<p class="text-sm text-gray-300">Size: 500 kW - 2 MW units</p>
+<p class="text-sm text-gray-300">Function: Local waveform, blackstart islanding</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Middle Section: Deployment Table -->
+<div class="mb-4">
+<div class="card p-4 rounded-lg">
+<h2 class="text-xl font-semibold text-white mb-3">Sample Deployment Strategy: 10 GW National Grid</h2>
+<div class="flex justify-center">
+<img alt="TSGB Deployment Strategy Table" class="h-96 object-contain" src="https://picture-search.skywork.ai/aippt/image/sheet/01d8379502d6ad96c5e30c402ee8995f.jpg">
+</div>
+</div>
+</div>
+<!-- Bottom Section: Economics -->
+<div class="grid grid-cols-2 gap-4">
+<div class="economics-column p-4 rounded-lg">
+<h2 class="text-xl font-semibold text-white mb-3 flex items-center">
+<i class="fas fa-coins text-yellow-400 mr-3"></i>
+                        Economic Advantages
+                    </h2>
+<div class="grid grid-cols-1 gap-3">
+<div class="strategy-box p-3 rounded-lg">
+<div class="flex items-center mb-1">
+<i class="fas fa-dollar-sign text-green-400 mr-2"></i>
+<h3 class="text-md font-medium text-white">Cost Efficiency</h3>
+</div>
+<p class="text-sm text-gray-300">$113,000 per MW - significantly less than synchronous condensers</p>
+<p class="text-sm text-gray-300">No fuel, no emission compliance, no operating software</p>
+</div>
+<div class="strategy-box p-3 rounded-lg">
+<div class="flex items-center mb-1">
+<i class="fas fa-chart-line text-blue-400 mr-2"></i>
+<h3 class="text-md font-medium text-white">Revenue Streams</h3>
+</div>
+<p class="text-sm text-gray-300">Frequency Response: $14-22/kW/year</p>
+<p class="text-sm text-gray-300">Potential revenue: $40,000-$90,000/year per 10 MW unit</p>
+</div>
+</div>
+</div>
+<div class="economics-column p-4 rounded-lg">
+<h2 class="text-xl font-semibold text-white mb-3 flex items-center">
+<i class="fas fa-wrench text-orange-400 mr-3"></i>
+                        Operational Benefits
+                    </h2>
+<div class="grid grid-cols-1 gap-3">
+<div class="strategy-box p-3 rounded-lg">
+<div class="flex items-center mb-1">
+<i class="fas fa-hourglass-half text-purple-400 mr-2"></i>
+<h3 class="text-md font-medium text-white">Long Lifespan</h3>
+</div>
+<p class="text-sm text-gray-300">25-40+ years operational life</p>
+<p class="text-sm text-gray-300">Compared to 8-12 years for batteries and inverters</p>
+</div>
+<div class="strategy-box p-3 rounded-lg">
+<div class="flex items-center mb-1">
+<i class="fas fa-tools text-red-400 mr-2"></i>
+<h3 class="text-md font-medium text-white">Minimal Maintenance</h3>
+</div>
+<p class="text-sm text-gray-300">Annual OpEx: Only $13,500 per 10 MW unit</p>
+<p class="text-sm text-gray-300">Bearing service intervals: 50,000-80,000 hours</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="px-16 py-4 flex justify-between items-center">
+<div class="flex items-center">
+<i class="fas fa-lightbulb text-yellow-400 mr-2"></i>
+<p class="text-gray-300 text-sm">Build grid stability, not firmware.</p>
+</div>
+<p class="text-gray-400 text-sm" style="visibility: hidden;">9 / 10</p>
+</div>
+</div>
+
+</body></html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>System Architecture</title>
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script><style>
+        body {width: 1280px; min-height: 808px; overflow: hidden; margin: 0;
+            padding: 0;}
+        .slide {
+            width: 1280px;
+            min-height: 808px;
+            position: relative;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1a3a3a 0%, #0f172a 100%);
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .component-box {
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            transition: all 0.3s ease;
+        }
+        .component-box:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .divider {
+            height: 4px;
+            background: linear-gradient(90deg, #f59e0b 0%, #10b981 100%);
+        }
+        .arrow-right:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -15px;
+            width: 0;
+            height: 0;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-left: 15px solid rgba(16, 185, 129, 0.7);
+            transform: translateY(-50%);
+        }
+        .arrow-left:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -15px;
+            width: 0;
+            height: 0;
+            border-top: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-right: 15px solid rgba(16, 185, 129, 0.7);
+            transform: translateY(-50%);
+        }
+    
+html {
+    overflow: hidden;
+}</style>
+</head>
+<body>
+<div class="slide gradient-bg flex flex-col" style=" overflow: hidden;">
+<!-- Header -->
+<div class="px-16 pt-12 pb-6">
+<h1 class="text-4xl font-bold text-white tracking-tight">System Architecture</h1>
+<div class="divider w-24 mt-4"></div>
+</div>
+<!-- Main Content -->
+<div class="flex-1 px-16 flex flex-col">
+<!-- Overview Section -->
+<div class="mb-6">
+<div class="card p-4 rounded-lg">
+<p class="text-gray-200">The TwinScroll Grid Balancer (TSGB) integrates mechanical inertia with electrical generation to provide grid stability without software mediation. The system features a fixed-speed DC input drive, massive inertial rotor, and synchronous generator output.</p>
+</div>
+</div>
+<!-- Architecture Diagram -->
+<div class="flex-1 grid grid-cols-3 gap-6">
+<!-- DC Input Section -->
+<div class="component-box p-5 rounded-lg relative arrow-right">
+<div class="flex items-center mb-4">
+<i class="fas fa-plug text-blue-400 text-3xl mr-3"></i>
+<h3 class="text-xl font-medium text-white">Input-Side Power Drive</h3>
+</div>
+<div class="space-y-3">
+<div class="flex items-start">
+<i class="fas fa-bolt text-yellow-400 mt-1 mr-3"></i>
+<p class="text-gray-300">DC-fed MV Drive capable of spinning from renewable sources</p>
+</div>
+<div class="flex items-start">
+<i class="fas fa-tachometer-alt text-green-400 mt-1 mr-3"></i>
+<p class="text-gray-300">Fixed-speed operation at 3000 RPM</p>
+</div>
+<div class="flex items-start">
+<i class="fas fa-shield-alt text-orange-400 mt-1 mr-3"></i>
+<p class="text-gray-300">Advantages: No inverter bottleneck, direct torque control</p>
+</div>
+</div>
+</div>
+<!-- Rotor Section with Image -->
+<div class="flex flex-col">
+<div class="component-box p-5 rounded-lg flex-1 mb-4">
+<div class="flex items-center mb-2">
+<i class="fas fa-sync-alt text-green-400 text-3xl mr-3"></i>
+<h3 class="text-xl font-medium text-white">Massive Inertial Rotor</h3>
+</div>
+<div class="flex flex-col items-center">
+<img alt="Shaft and Rotor Coupling" class="w-32 h-32 object-contain mb-3" src="https://picture-search.skywork.ai/aippt/image/sheet/3c66f79a953782f434a7e5630039630e.jpg">
+<div class="space-y-2">
+<div class="flex items-start">
+<i class="fas fa-balance-scale text-purple-400 mt-1 mr-2"></i>
+<p class="text-gray-300">120 MJ mechanical inertia at 10 MW rating</p>
+</div>
+<div class="flex items-start">
+<i class="fas fa-ruler text-blue-400 mt-1 mr-2"></i>
+<p class="text-gray-300">Optimal shaft diameter: 1.4m (chromoly steel)</p>
+</div>
+</div>
+</div>
+</div>
+<div class="component-box p-3 rounded-lg bg-green-900 bg-opacity-30">
+<div class="flex items-center justify-center">
+<i class="fas fa-info-circle text-yellow-400 mr-2"></i>
+<p class="text-white text-sm">Stores energy in rotational mass, not software</p>
+</div>
+</div>
+</div>
+<!-- Generator Output Section -->
+<div class="component-box p-5 rounded-lg relative arrow-left">
+<div class="flex items-center mb-4">
+<i class="fas fa-bolt text-yellow-400 text-3xl mr-3"></i>
+<h3 class="text-xl font-medium text-white">Generator Output</h3>
+</div>
+<div class="space-y-3">
+<div class="flex items-start">
+<i class="fas fa-wave-square text-blue-400 mt-1 mr-3"></i>
+<p class="text-gray-300">Synchronous generator locked to grid frequency</p>
+</div>
+<div class="flex items-start">
+<i class="fas fa-exchange-alt text-green-400 mt-1 mr-3"></i>
+<p class="text-gray-300">Torque and voltage alignment for grid stability</p>
+</div>
+<div class="flex items-start">
+<i class="fas fa-battery-full text-orange-400 mt-1 mr-3"></i>
+<p class="text-gray-300">Natural reactive power support during voltage dips</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Key Features -->
+<div class="mt-6">
+<div class="grid grid-cols-4 gap-4">
+<div class="component-box p-3 rounded-lg bg-opacity-30 bg-blue-900">
+<div class="flex flex-col items-center text-center">
+<i class="fas fa-microchip text-red-400 text-2xl mb-2"></i>
+<h4 class="text-white text-sm font-medium">Zero-Firmware Operation</h4>
+<p class="text-gray-300 text-xs">No DSP needed</p>
+</div>
+</div>
+<div class="component-box p-3 rounded-lg bg-opacity-30 bg-green-900">
+<div class="flex flex-col items-center text-center">
+<i class="fas fa-cogs text-yellow-400 text-2xl mb-2"></i>
+<h4 class="text-white text-sm font-medium">2:1 Gear Ratio</h4>
+<p class="text-gray-300 text-xs">Speed-locked operation</p>
+</div>
+</div>
+<div class="component-box p-3 rounded-lg bg-opacity-30 bg-yellow-900">
+<div class="flex flex-col items-center text-center">
+<i class="fas fa-house-damage text-blue-400 text-2xl mb-2"></i>
+<h4 class="text-white text-sm font-medium">Housing &amp; Bearings</h4>
+<p class="text-gray-300 text-xs">Temperature monitored</p>
+</div>
+</div>
+<div class="component-box p-3 rounded-lg bg-opacity-30 bg-purple-900">
+<div class="flex flex-col items-center text-center">
+<i class="fas fa-project-diagram text-green-400 text-2xl mb-2"></i>
+<h4 class="text-white text-sm font-medium">SCADA Integration</h4>
+<p class="text-gray-300 text-xs">Optional, not required</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<div class="px-16 py-4 flex justify-between items-center">
+<div class="flex items-center">
+<i class="fas fa-quote-left text-green-400 mr-2"></i>
+<p class="text-gray-300 text-sm">The architecture is the solution—physics over firmware.</p>
+</div>
+<p class="text-gray-400 text-sm" style="visibility: hidden;">4 / 10</p>
+</div>
+</div>
+
+</body></html>
