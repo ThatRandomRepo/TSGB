@@ -20,7 +20,7 @@
         const steps = Math.floor(duration / dt);
         let time = [], freq = [], rocof = [], gear = [], torque = [];
 
-        const ratios = [...Array(12)].map((_, i) => 1.8 + i * ((2.0 - 1.8) / 11));
+        const ratios = [...Array(12)].map((_, i) => 1.8 + i * ((2.20122 - 2.0) / 11));
         const torques = [...Array(12)].map((_, i) => 420 - i * ((420 - 180) / 11));
 
         let lastFreq = 50.0;

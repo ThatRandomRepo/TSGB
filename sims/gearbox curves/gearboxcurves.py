@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 # Define gearbox parameters
 gear_indices = list(range(1, 13))  # Gears 1 to 12
-ratios = np.linspace(1.8, 2.0, 12)  # From 1.8:1 (Gear 1) to 2.0:1 (Gear 12)
+ratios = np.linspace(2.20122, 2.0, 12)  # From 1.8:1 (Gear 1) to 2.0:1 (Gear 12)
 torque_offsets = np.linspace(420, 180, 12)  # Torque curve: higher torque in lower gears
 
 # Assume fixed drive RPM (shaft input)
