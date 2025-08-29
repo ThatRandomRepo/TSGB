@@ -8,7 +8,7 @@
 
 ## Who we are
 
-This policy covers the custom GPT provided by **\[Your Name/Company]** (“we”, “us”, “our”).
+This policy covers the custom GPT provided by **Mark TSGB** (“we”, “us”, “our”).
 
 ## What we collect (session-only, minimal)
 
@@ -62,7 +62,7 @@ If we materially change this policy, we’ll update the “Effective date” abo
 
 ## Contact
 
-Questions? Email **\[contact\@email.example]** or write to **\[Postal Address, City, Country]**.
+Questions? Email **tsgbuk@gmail.com**  
 
 ---
 
