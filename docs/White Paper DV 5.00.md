@@ -1,5 +1,5 @@
 TwinScroll Grid Balancer (TSGB) – Document Version 5.0
-Envisioned by: M. Shirley.
+Envisioned by: Mark S TSGB
 Date: August 9th, 2025.
 
 THIS WHITEPAPER IS LENGTHY BECAUSE THE 7 P'S RULE.
