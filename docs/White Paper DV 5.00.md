@@ -1796,7 +1796,7 @@ THANK YOU, THANK YOU, THANK YOU, You made it here, you've made my day just getti
 
 
 Prepared by:  
-Mark Shirley  
+Mark
 Independent Researcher & System Architect  
 Inventor of the TSGB Architecture
 
